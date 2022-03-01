@@ -31,7 +31,7 @@ function hapusPenumpang(a){
 
     } else {
         for(i=0; i<penumpang.length; i++){
-           if(a == penumpang[i]){
+            if(a == penumpang[i]){
                 penumpang.splice(i,1,undefined);
                 break;
             } else if(i == penumpang.length -1){
