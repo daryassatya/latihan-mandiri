@@ -27,14 +27,15 @@
 // Pada cara literal, this mengembalikan object yang bersangkutan
 
 // //  Cara 3 - Constructor Function
-function Halo(){
-    console.log(this);
-    console.log('halo');
-}
-Halo() //Jika hanya seperti ini, maka this akan mengembalikan nilai window
-new Halo // Jika seperti ini, maka this akan mengembalikan objek baru
-var obj1 = new Halo();
-var obj2 = new Halo();
+// function Halo(){
+//     this.sapa = "Hello";
+//     console.log(this);
+//     console.log('halo');
+// }
+// Halo() //Jika hanya seperti ini, maka this akan mengembalikan nilai window
+// new Halo // Jika seperti ini, maka this akan mengembalikan objek baru
+// var obj1 = new Halo();
+// var obj2 = new Halo();
 
 
 //This itu sama dengan window
