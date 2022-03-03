@@ -14,6 +14,7 @@ judul.style.backgroundColor = 'red';
 judul.innerHTML = 'Sandhika Galih';
 
 
+
 // By Tag Name
 // yang dipanggil adalah elementnya langsung
 const p = document.getElementsByTagName('p');

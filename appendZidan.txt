@@ -1,0 +1,76 @@
+tahap2 append pada coding zidan itokin
+1.Buat dulu node yang akan menjadi parent
+	<div class="col-lg-6">
+                                    <div class="form-group increment document">
+                                        <div class="test">
+                                            <label for="">Composisi </label>
+                                            <button type="button" class="btn btn-outline-primary btn-add">
+                                                <i class="fas fa-plus-square"></i>
+                                            </button>
+                                        </div>
+	</div>
+
+2. Buat isi atau child node untuk di append kedalam node parent
+				<div class="clone invisible">
+                                        <div class="test">
+                                            <div class="input-group mt-4">
+                                                <select class="form-control material_id" onchange="selectMaterial(event)" name="material_id[]"
+                                                    id="material_id">
+                                                    <option disabled selected>Choose Material</option>
+                                                    @foreach ($materials as $material)
+                                                    <option value="{{ $material->id }}" data-unitid="{{$material->unit_id}}"
+                                                        {{ (old('material_id') ? old('material_id')[0]: '') == $material->id ? 'selected' : '' }}>
+                                                        {{ $material->material_code }} | {{ $material->material_name }}</option>
+                                                    @endforeach
+                                                </select>
+                                                @error('material_id')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+
+                                                <div class="input-group-append">
+                                                    <button type="button" class="btn btn-outline-danger btn-remove">
+                                                        <i class="fas fa-minus-square"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="input-group mt-1">
+                                                <input placeholder="Quantity" type="number"
+                                                    value="{{ (old('qty_material') ? old('qty_material')[0] : '') }}"
+                                                    class="form-control @error('qty_material') is-invalid @enderror qty_material"
+                                                    name="qty_material[]">
+                                                @error('qty_material')
+                                                <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
+
+                                            <div class="form-group mt-1">
+                                                <select class="form-control unit_id" name="unit_id[] id=" unit">
+                                                    <option disabled selected>Choose Unit</option>
+                                                    @foreach ($units as $unit)
+                                                    <option value="{{ $unit->id }}"
+                                                        {{ (old('unit_id') ? old('unit_id')[0] : '') == $unit->id ? 'selected' : '' }}>
+                                                        {{ $unit->unit_code }} | {{ $unit->unit_name }}</option>
+                                                    @endforeach
+                                                </select>
+                                                @error('unit_id')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                                @enderror
+                                            </div>
+                                        </div>
+                                    </div>
+
+berikut kode JavaScriptnya
+$(document).ready(function () {
+        $(".btn-add").click(function () {
+            let markup = $(".invisible").html();
+            $(".increment").append(markup);
+        });
+        $("body").on("click", ".btn-remove", function () {
+            $(this).parents(".test").remove();
+        })
+        
+    })
