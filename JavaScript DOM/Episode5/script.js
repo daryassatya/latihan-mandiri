@@ -29,7 +29,7 @@ const p2 = document.querySelector('.p2');
 p2.classList.add('label'); // Menambahkan class label kedalam element yang memiliki class p2
 p2.classList.remove('label'); // Menghapus class label jika ada kedalam element yang memiliki class p2
 p2.classList.toggle('label'); // Menghapus class label jika ada dan Menambahkan class label jika tidak ada kedalam element yang memiliki class p2
-// document.body.classList.toggle('dark-mode');
+document.body.classList.toggle('dark-mode');
 p2.classList.add('satu'); 
 p2.classList.add('dua'); 
 p2.classList.add('tiga'); 

@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Episode8</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .green-mode{
+            background-color: lightgreen;
+        }
+        .kotak{
+            width: 25px;
+            height: 25px;
+            margin: auto;
+        }
+        .merah{
+            background-color: red;
+        }
+        .hijau{
+            background-color: green;
+        }
+        .biru{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Bermain dengan Warna</h1>
+    <button type="button">Ubah Warna</button>
+    <br><br>
+    <div class="kotak merah"></div>
+    <input type="range" min="0" max="255" name="sliderMerah"><br>
+    <div class="kotak hijau"></div>
+    <input type="range" min="0" max="255" name="sliderHijau"><br>
+    <div class="kotak biru"></div>
+    <input type="range" min="0" max="255" name="sliderBiru">
+    <script src="script.js"></script>
+</body>
+</html>
