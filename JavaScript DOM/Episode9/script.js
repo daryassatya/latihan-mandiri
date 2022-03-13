@@ -3,6 +3,10 @@ const tampilanComp = document.querySelector('.img-komputer');
 // const pilihanGajah = document.querySelector('.gajah');
 // const pilihOrang = document.querySelector('.orang');
 // const pilihanSemut = document.querySelector('.semut');
+const compScoreView = document.querySelector('.comp-score-span2');
+let compScore = 0;
+const playerScoreView = document.querySelector('.player-score-span2');
+let playerScore = 0;
 
 function randomComp() {
     // let comp = Math.random();
@@ -97,13 +101,19 @@ function putar(){
 
 //  Cara baru
 const pilihan = document.querySelectorAll('li img');
+
 pilihan.forEach(function (i) {
     i.addEventListener('click', function () {
         putar();
         setTimeout(function(){
             const pilihanComp = randomComp();
+            const hasilProses = prosesGame(i.className, pilihanComp);
             tampilanComp.setAttribute('src', 'img/'+pilihanComp+'.png');
-            statusInfo.innerHTML = prosesGame(i.className, pilihanComp);
+            statusInfo.innerHTML = hasilProses;
+            compScore += (hasilProses == 'KALAH!') ? 1 : 0;
+            compScoreView.innerHTML = compScore;
+            playerScore += (hasilProses == 'MENANG!') ? 1 : 0;
+            playerScoreView.innerHTML = playerScore;
         }, 1000);
     });
 });

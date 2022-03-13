@@ -156,6 +156,91 @@ h1 {
     7.7781745931px 7.7781745931px 0 #aaaaaa;
 }
 
+.comp-score-span1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 40px;
+  /* margin-top: 10px; */
+  text-transform: uppercase;
+  color: #f00909;
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333,
+    -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333,
+    0.7778174593px 0.7778174593px 0 #aaaaaa,
+    1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa,
+    3.1112698372px 3.1112698372px 0 #aaaaaa,
+    3.8890872965px 3.8890872965px 0 #aaaaaa,
+    4.6669047558px 4.6669047558px 0 #aaaaaa,
+    5.4447222151px 5.4447222151px 0 #aaaaaa,
+    6.2225396744px 6.2225396744px 0 #aaaaaa,
+    7.0003571337px 7.0003571337px 0 #aaaaaa,
+    7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+.comp-score-span2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  /* margin-top: 10px; */
+  text-transform: uppercase;
+  color: #f00909;
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333,
+    -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333,
+    0.7778174593px 0.7778174593px 0 #aaaaaa,
+    1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa,
+    3.1112698372px 3.1112698372px 0 #aaaaaa,
+    3.8890872965px 3.8890872965px 0 #aaaaaa,
+    4.6669047558px 4.6669047558px 0 #aaaaaa,
+    5.4447222151px 5.4447222151px 0 #aaaaaa,
+    6.2225396744px 6.2225396744px 0 #aaaaaa,
+    7.0003571337px 7.0003571337px 0 #aaaaaa,
+    7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+.player-score-span1 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  color: #00ff0d;
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333,
+    -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333,
+    0.7778174593px 0.7778174593px 0 #aaaaaa,
+    1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa,
+    3.1112698372px 3.1112698372px 0 #aaaaaa,
+    3.8890872965px 3.8890872965px 0 #aaaaaa,
+    4.6669047558px 4.6669047558px 0 #aaaaaa,
+    5.4447222151px 5.4447222151px 0 #aaaaaa,
+    6.2225396744px 6.2225396744px 0 #aaaaaa,
+    7.0003571337px 7.0003571337px 0 #aaaaaa,
+    7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+.player-score-span2 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  color: #00ff0d;
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333,
+    -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333,
+    0.7778174593px 0.7778174593px 0 #aaaaaa,
+    1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa,
+    3.1112698372px 3.1112698372px 0 #aaaaaa,
+    3.8890872965px 3.8890872965px 0 #aaaaaa,
+    4.6669047558px 4.6669047558px 0 #aaaaaa,
+    5.4447222151px 5.4447222151px 0 #aaaaaa,
+    6.2225396744px 6.2225396744px 0 #aaaaaa,
+    7.0003571337px 7.0003571337px 0 #aaaaaa,
+    7.7781745931px 7.7781745931px 0 #aaaaaa;
+}
+
 .container {
   width: 600px;
   margin: auto;
@@ -212,8 +297,14 @@ h1 {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
+.player-score {
+  padding-top: 30px;
+  margin-bottom: 25px;
+}
+
 ul {
-  padding-top: 80px;
+  /* margin-top: 50px; */
+  /* padding-top: 10px; */
   padding-left: 25px;
 }
 
