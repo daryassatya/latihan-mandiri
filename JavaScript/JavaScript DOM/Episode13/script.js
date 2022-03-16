@@ -14,14 +14,19 @@
 
 const container = document.querySelector('.container');
 const jumbo = document.querySelector('.jumbo');
-
+  
 container.addEventListener('click', function(event){
     if(event.target.className == 'thumb'){
+        [].forEach.call(document.getElementsByClassName('thumb'), function(thumb) {
+        console.log(thumb.classList.remove('active'));
+        });  
+       
         jumbo.src = event.target.src;
         jumbo.classList.add('fade');
         setTimeout(function(){
             jumbo.classList.remove('fade');
         }, 500); //Bisa dipercepat namun animasinya tidak akan sampai 500 milisecond
+        event.target.classList.add('active');
     }
 })
 
