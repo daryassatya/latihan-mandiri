@@ -84,7 +84,7 @@ let add = (function(){
     }
 })();
 
-counter = 100; // tidak akan berubahe
+counter = 100; // tidak akan berubah
 
 console.log(add());
 console.log(add());
