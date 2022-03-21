@@ -1,0 +1,76 @@
+Perbedaan Function!
+
+Hoisting adalah menaikkan terlebih dahulu variabel dan function dalam scope tertentu, sehingga dapat memicu terjadinya undefined
+
+1. Function Declaration
+   salah satu bentuk :
+   const Mahasiswa = function(){
+        this.nama = 'Dimas Aryasatya';
+        this.umur = 19;
+
+        //Ini Function Declaration!
+        setInterval(function(){
+            console.log(this.umur)
+        }, 500);
+    }
+    Manfaat :
+    -Hoisting untuk diangkat terlebih dahulu
+
+    Kekurangan :
+    -Karena terkena hoisting, jika dia di nested function maka dia tidak dapat mengakses lexical scope.
+    Karena langsung mengarah ke global scope atau window
+
+    
+
+2. Function Expression
+     bentuk :
+
+    const Mahasiswa = function(){
+        this.nama = 'Dimas Aryasatya';
+        this.umur = 19;
+
+        //Ini function Expression!
+        this.sayHello = function() {
+            //  This akan mencari ke lexical scope / parent scope (this masih berjalan karena masih memiliki lexical scope)
+            console.log(`Hello, nama sayan ${this.nama}, dan saya berumur ${this.umur} tahun`);
+        }
+    }
+
+    Manfaat:
+    -Memiliki akses this karena dimasukkan kedalam variabel, jadi tidak akan terkena hoisting
+
+3. Arrow Function
+    salah satu bentuk :
+    const Mahasiswa = function(){
+        this.nama = 'Dimas Aryasatya';
+        this.umur = 19;
+
+        //Ini Arrow Function! 
+        setInterval(() => {
+            console.log(this.umur)
+        }, 500);
+    }
+
+    Manfaat :
+    -Mencari lexical scope
+
+    Kekurangan : 
+    -Tidak dapat menggunakan this untuk dirinya sendiri jika tidak memiliki parent function atau lexical scope,
+    contoh kekurangan: 
+
+    Pada Objek Literal
+// const mhs1 = {
+//     nama: 'Dimas',
+//     umur: 19,
+//     sayHello: () =>{
+//         //  This tidak dapat menemukan lexical scope, sehingga this.nama dan this.umur undefined
+//         console.log(`Hello, nama sayan ${this.nama}, dan saya berumur ${this.umur} tahun`);
+//         console.log(this); //this akan mengarah langsung ke window
+//     }
+//     // sayHello: function() {
+//     //         //  bisa dijalankan!, namun lebih baik jika return
+//     //         console.log(`Hello, nama sayan ${this.nama}, dan saya berumur ${this.umur} tahun`);
+//     //     // console.log(this);
+//     //     // return `Hello ${this.nama}`
+//     // }
+// }
