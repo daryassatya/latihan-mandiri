@@ -26,7 +26,7 @@ console.log(filterLebihDariTiga);
 
 
 //  ----- Map -----
-// Klaikan semua angka dengan 2
+// Kalikan semua angka dengan 2
 const hasilkaliDua = angka.map(val => val*2);
 console.log(hasilkaliDua); 
 
