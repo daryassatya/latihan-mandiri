@@ -16,20 +16,20 @@
     //  Contoh :
     const mhs = {
         nama: 'Dimas Aryasatya',
-        umur : 33,
+        umur : 19,
         nrp: '123123123123',
         email: 'dimasaryasatya@gmail.com'
     };
 
     // dengan concate biasa:
-    let concateBiasa = '';
+    const concateBiasa = '';
     concateBiasa += '<div class="mhs">';
     concateBiasa += '<h2>' + mhs.nama + '</h2>';
     concateBiasa += '<span class="nrp">' + mhs.nrp + '</span>'; 
     concateBiasa +=  '</div>';
 
     // dengan back tick :
-    let backTick = `<div class="mhs">
+    const backTick = `<div class="mhs">
     <h2>${mhs.nama}</h2>
     <span class="nrp">${mhs.nrp}</span>
     </div>`;
