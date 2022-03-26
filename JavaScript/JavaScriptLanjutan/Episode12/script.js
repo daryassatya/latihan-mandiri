@@ -101,7 +101,7 @@ const mhs = {
 // <span class="semester">Semester : ${mhs.semester}</span>
 // <h4>Mata Kuliah :</h4>
 // <ol>
-// ${mhs.mataKuliah.map(data => `<li>${data}</li>`)}
+// ${mhs.mataKuliah.map(data => `<li>${data}</li>`).join(')}
 //     </ol>
 // </div>`
 
@@ -109,7 +109,7 @@ const mhs = {
 // - Cara dengan function terpisah
 function cetakMatakuliah(mataKuliah){
     return `<ol>
-        ${mataKuliah.map(matkul => `<li>${matkul}</li>`)}
+        ${mataKuliah.map(matkul => `<li>${matkul}</li>`).join('')}
     </ol>`;
 }
 

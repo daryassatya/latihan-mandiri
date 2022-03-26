@@ -32,6 +32,7 @@ console.log(hasilkaliDua);
 
 
 //  ----- Reduce -----
+// Mengabungkan (concate atau tambah) dari setiap array
 // nilaiAwal + -1 + 8 + 9 + 1 + 4 + -5 + -4 + 3 + 2 + 9
 const nilaiAwal = 5; //Default 0 jika tidak ditulis atau ditambahkan
 const hasilReduce = angka.reduce((accumulator, currentValue) => accumulator + currentValue, nilaiAwal);
