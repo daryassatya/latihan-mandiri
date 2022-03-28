@@ -59,8 +59,8 @@ const mhs1 = {
     }
 }
 
-// function cetakMhs({nama, umur, nilai: {tugas,uts,uas}}){
-//     return `Helo, nama saya ${nama}, saya berumur ${umur} tahun.
-// Nilai Uas saya adalah ${uas}`;
-// }
-// console.log(cetakMhs(mhs1));
+function cetakMhs({nama, umur, nilai: {tugas,uts,uas}}){
+    return `Helo, nama saya ${nama}, saya berumur ${umur} tahun.
+Nilai Uas saya adalah ${uas}`;
+}
+console.log(cetakMhs(mhs1));
