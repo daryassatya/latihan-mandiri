@@ -66,7 +66,7 @@ const mhsItterable = ["Dimas", "arya", "Satya"];
 // jumlahAngka(1,2,3,4,5);
 
 
-// ---> For..of <---
+// ---> For..in <---
 // "Creates a loop only iterating over enumerable"
 // "Membuat perulangan pada enumerable atau properti pada objek"
 
