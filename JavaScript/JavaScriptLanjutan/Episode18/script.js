@@ -46,7 +46,7 @@ const team = {
     devOps: 'Orang'
 }
 const {pm, ...myTeam} = team;
-console.log(pm);
+console.log(myTeam);
 
 
 // Test 5 (Filtering)
