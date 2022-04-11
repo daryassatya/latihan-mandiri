@@ -1,0 +1,18 @@
+.bg-blue{
+    background-color: aqua;
+}
+
+.table-content,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+}
+
+.border-none{
+    border: none;
+}
