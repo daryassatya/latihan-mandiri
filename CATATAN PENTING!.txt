@@ -1,3 +1,7 @@
 Catatan ini semua berasal dari latihan mandiri saya yang berasal dari youtube dan sumber lainnya!
 
 JavaScript = Youtube Source Web Programming UNPAS
+
+Folder PHP, CI3, CI4 HILANG!
+
+UPCOMING NEXTJS, LARAVEL8/9

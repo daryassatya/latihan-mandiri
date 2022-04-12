@@ -1,11 +1,16 @@
 // NonLinear bagi dua
 // x^3 + 4x^2 - 10 = 0
 
+const interval1 = document.querySelector('.input1');
+const interval2 = document.querySelector('.input2');
+const button1 = document.querySelector('.bt1');
+
+
+button1.addEventListener('click', function(){
+if(interval1 && interval2){
 let i=0;
-const interval1 = 1;
-const interval2 = 2;
-let x1 = interval1;
-let x2 = interval2;
+let x1 = parseInt(interval1.value);
+let x2 = parseInt(interval2.value);
 let xr;
 let fx1;
 let fx2;
@@ -59,8 +64,8 @@ table1Header = `
 table1Content = '';
 
 while(err>0.001){
-    fX1()
-    fX2()
+    fX1();
+    fX2();
     xR();
     fXr();
     fx1Fxr();
@@ -91,17 +96,23 @@ while(err>0.001){
 }
 const table1 = document.querySelector('.table1');
 table1.innerHTML = `${table1Header}${table1Content}`;
-
+}
+});
 
 
 // ----- Posisi Palsu -----
 // f(x) = x^3+x^2-3x-3
 
+const interval1S = document.querySelector('.input3');
+const interval2S = document.querySelector('.input4');
+const button2 = document.querySelector('.bt2');
+
+
+button2.addEventListener('click', function(){
+if(interval1 && interval2){
 let j=0;
-const interval1S = 1;
-const interval2S = 2;
-let xn = interval1S;
-let xn1 = interval2S;
+let xn = parseInt(interval1S.value);
+let xn1 = parseInt(interval2S.value);
 let xt;
 let fxn;
 let fxn1;
@@ -127,10 +138,6 @@ function fxnFxt(){
     fxnfxt = fxn * fxt;
 }
 
-
-function errors(){
-    errS = Math.abs((x1S-x2S)/(x1S+x2S))*100;
-}
 
 table2Header = `
     <tr>
@@ -176,3 +183,5 @@ while(fxt>0.001){
 }
 const table2 = document.querySelector('.table2');
 table2.innerHTML = `${table2Header}${table2Content}`;
+}
+});

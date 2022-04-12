@@ -16,3 +16,12 @@ td{
 .border-none{
     border: none;
 }
+
+.input1, .input2, .input3, .input4{
+    width: 80px;
+    text-align: center;
+}
+
+.bt1, .bt2{
+    margin-left: 3px;
+}
