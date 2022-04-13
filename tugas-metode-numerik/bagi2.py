@@ -17,7 +17,6 @@ def fX2():
     global fx2
     fx2 = (x2**3)+(4*(x2**2))-10
 
-
 def xR():
     global xr
     xr = (x1+x2)/2
