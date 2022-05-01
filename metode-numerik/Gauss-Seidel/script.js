@@ -13,13 +13,13 @@ let err=1;
 let p1x = parseInt(4);
 let p1y = parseInt(1);
 let p1z = parseInt(-1);
-const p1b = 7
+const p1b = 7;
 
 //harus diubah
 let p2x = parseInt(-4);
 let p2y = parseInt(-8);
 let p2z = parseInt(-1);
-const p2b = -21
+const p2b = -21;
 
 //harus diubah
 let p3x = parseInt(2);
@@ -36,21 +36,21 @@ const y1 = p2y/p2b;
 const z1 = p3z/p3b;
 
 //harus diubah
-function persamaan1(getY,getZ){
+function persamaan1(){
     // x = (7+y-z)/4
-    x = (p1b+getY-getZ)/p1x;
+    x = (p1b+y-z)/p1x;
 }
 
 //harus diubah
-function persamaan2(getX, getZ){
+function persamaan2(){
     // y = (-21-4x-z)/-8
-    y = (p2b+p2x*getX-getZ)/p2y;
+    y = (p2b+p2x*x-z)/p2y;
 }
 
 //harus diubah
-function persamaan3(getX, getY){
+function persamaan3(){
     // z = (15+2x-y)/5
-    z = (p3b+p3x*getX-getY)/p3z;
+    z = (p3b+p3x*x-y)/p3z;
 }
 
 function Ex(getX){
@@ -90,14 +90,14 @@ table1Content = `
             <td></td>
         </tr>
         `;
-
 while(err>0.001){
     let getX = x;
     let getY = y;
     let getZ = z;
-    persamaan1(getY,getZ);
-    persamaan2(getX, getZ);
-    persamaan3(getX, getY);
+    persamaan1();
+    console.log((p2b+p2x*x-z)/p2y)
+    persamaan2();
+    persamaan3();
     Ex(getX);
     Ey(getY);
     Ez(getZ);
@@ -119,5 +119,4 @@ while(err>0.001){
 }
 const table1 = document.querySelector('.table1');
 table1.innerHTML = `${table1Header}${table1Content}`;
-
 });
