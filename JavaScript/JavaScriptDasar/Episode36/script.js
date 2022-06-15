@@ -9,7 +9,7 @@
 
 //5. Slice
 //slice(awal, akhir)
-var arr = ['Dimas',  'Arya', 'Satya', 'Ganteng', 'Banget'];
+var arr = ['Dimas', 'Arya', 'Satya', 'Ganteng', 'Banget'];
 // arr.slice(1,3);
 
 //slice mengahsilkan array baru, jadi harus disimpan kedalam array baru

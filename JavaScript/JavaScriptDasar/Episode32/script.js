@@ -15,4 +15,4 @@ function faktorial(a){
         return 1;
     }
         return a*faktorial(a-1);
-    }
+}

@@ -1,3 +1,6 @@
+// untuk mendapatkan ?data dari url
+// https://stackoverflow.com/questions/814613/how-to-read-get-data-from-a-url-using-javascript
+
 $('.search-button').on('click', function(){
     $.ajax({
         url: 'http://www.omdbapi.com/?apikey=e2e26a15&s='+$('.input-keyword').val(),
@@ -22,7 +25,6 @@ $('.search-button').on('click', function(){
                     error: e => {
                         console.log(e.responseText);
                     }
-                
                 })
             });
         },

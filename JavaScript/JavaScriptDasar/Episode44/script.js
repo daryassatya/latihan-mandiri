@@ -31,4 +31,5 @@ function Angkot(sopir, trayek, penumpang, kas){
     }
 }
 var angkot1 = new Angkot('Sandhika Galih', ['Cicaheum', 'Cibiru'], [], 0);
+// console.log(angkot1.sopir)
 var angkot2 = new Angkot('Tom Cruise', ['Antapani', 'Ciroyom'], [], 0);

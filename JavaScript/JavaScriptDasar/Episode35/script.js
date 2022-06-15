@@ -9,7 +9,7 @@
 // arr[1] = "Arya"; 
 // arr[2] = "Satya";
 
-//2. Menghapus isi arra7y
+//2. Menghapus isi array
 // var arr = ["Dimas", "Arya", "Satya"];
 // arr[1] = undefined;
 // console.log(arr);
