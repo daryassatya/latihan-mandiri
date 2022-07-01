@@ -1,0 +1,6 @@
+10019	Nuraini	Silver
+10187	Rizal	Silver
+10189	Fauzia	Gold
+10200	Intan	Gold
+10231	Rohim	Gold
+10232	Andik	Silver

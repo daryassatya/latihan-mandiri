@@ -1,0 +1,9 @@
+Sembako	50.000
+Sembako	30.000
+Sembako	10.000
+#	0
+Alat tulis	50.000
+#	0
+Pakaian	10.000
+Pakaian	50.000
+#	0
