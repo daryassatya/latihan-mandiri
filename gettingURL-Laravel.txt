@@ -1,7 +1,8 @@
 ----- Mengambil Url -----
 
 $route = Route::current()->getName();
-$route = url();
+$route = URL::current();
+$route = Request::url()
 $route = request()->segment(1);
 
 
@@ -18,6 +19,11 @@ Cara2
 @endif
 
 Cara3
+@if(Request::is('dashboard/index'))
+    // code
+@endif
+
+Cara4
 @if(request()->segment(1) === 'posts')
     // code
 @endif
