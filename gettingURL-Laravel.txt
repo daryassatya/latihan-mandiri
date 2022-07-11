@@ -1,0 +1,23 @@
+----- Mengambil Url -----
+
+$route = Route::current()->getName();
+$route = url();
+$route = request()->segment(1);
+
+
+----- Pengkondisian -----
+
+Cara1
+@if(Request::url() === 'your url here')
+    // code
+@endif
+
+Cara2
+@if(Route::current()->getName() === 'your url here')
+    // code
+@endif
+
+Cara3
+@if(request()->segment(1) === 'posts')
+    // code
+@endif
